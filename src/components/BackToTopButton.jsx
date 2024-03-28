@@ -16,8 +16,8 @@ const BackToTopButton = () => {
         position: "fixed",
         bottom: "20px",
         right: "20px",
-        width: "40px", // กำหนดความกว้างของปุ่ม
-        height: "40px", // กำหนดความสูงของปุ่ม
+        width: "48px", // กำหนดความกว้างของปุ่ม
+        height: "48px", // กำหนดความสูงของปุ่ม
         borderRadius: "50%", // กำหนดให้เป็นวงกลม
         backgroundColor: "#007bff",
         color: "#fff",

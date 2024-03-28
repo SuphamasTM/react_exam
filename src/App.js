@@ -2,7 +2,7 @@ import React, { createContext, useState, useEffect } from "react";
 import axios from "axios";
 import List from "./components/List";
 import Filter from "./components/Filter";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import BackToTopButton from "./components/BackToTopButton";
 
 export const DataContext = createContext(); // export DataContext
@@ -35,7 +35,13 @@ const App = () => {
 
   return (
     <div>
-      <div style={{ margin: "50px", justifyContent: "center" }}>
+      <div
+        style={{
+          margin: "50px",
+          justifyContent: "center",
+          // marginBottom: "100px",
+        }}
+      >
         <div style={{ marginLeft: "16px" }}>
           <h1>About Team</h1>
           <Filter handleSearch={handleSearch} />
@@ -45,7 +51,7 @@ const App = () => {
         </DataContext.Provider>
         <BackToTopButton />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
