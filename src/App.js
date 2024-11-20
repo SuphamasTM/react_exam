@@ -18,7 +18,7 @@ const App = () => {
   const fetchData = async () => {
     try {
       const baseUrl = process.env.REACT_APP_BASE_URL;
-      const response = await axios.get(baseUrl + "/api/v1/category");
+      const response = await axios.get(baseUrl + "/persons");
       setData(response.data);
       setFilteredData(response.data);
     } catch (error) {
